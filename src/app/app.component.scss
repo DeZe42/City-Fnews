@@ -1,0 +1,32 @@
+.news {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+    &__header {
+        display: flex;
+        height: 64px;
+        input {
+            font-size: 24px;
+            border-radius: 8px;
+            border: none;
+            margin: 0 0 0 auto;
+            &:focus {
+                outline: none;
+            }
+        }
+        &--menu-button {
+            display: none;
+        }
+        &--search-mobile {
+            display: none;
+        }
+    }
+    &__content {
+        display: flex;
+        flex-direction: column;
+        height: calc(100vh - 64px);
+        max-width: 1440px;
+        margin: 0 auto;
+    }
+}

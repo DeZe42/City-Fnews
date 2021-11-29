@@ -1,0 +1,13 @@
+<div class="create">
+    <form [formGroup]="createForm" class="create__form">
+        <mat-form-field appearance="outline">
+            <mat-label>Cím</mat-label>
+            <input matInput formControlName="title">
+        </mat-form-field>
+        <mat-form-field appearance="outline">
+            <mat-label>Leírás</mat-label>
+            <input matInput formControlName="description">
+        </mat-form-field>
+    </form>
+    <button mat-raised-button (click)="createNews()">Create</button>
+</div>

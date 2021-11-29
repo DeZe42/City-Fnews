@@ -1,0 +1,6 @@
+<div class="news" *ngFor="let element of news" [routerLink]="'/' + element.id">
+    <span class="news__title">{{ element.title }}</span>
+    <span class="news__description">{{ element.description }}</span>
+    <span class="news__date">Date: {{ element.date | date: 'yyyy. MM. dd.' }}</span>
+    <span class="news__views">Views: {{ element.views }}</span>
+</div>
